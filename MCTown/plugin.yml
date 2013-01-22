@@ -1,13 +1,24 @@
 name: MCTown
 main: net.mctown.MCTown.MCTown
-version: 0.1.0
+version: 0.2.1
 description: The Minecrafters Town SMP server plugin.
 author: Sumsang
 website: http://mctown.net/
 
 commands:
-  test:
-    description: Test command
-    permission: mctown.test
+  anvil:
+    description: Trol command.
+    permission: mctown.anvil
     permission-message: You do not have the permission <permission> to do that!
-    usage: "Usage: /test"
+    usage: "Usage: /anvil"
+  distance:
+    description: Measure the distance between you and the targeted block.
+    permission: mctown.distance
+    permission-message: You do not have the permission <permission> to do that!
+    usage: "Usage: /distance"
+  spawnblock:
+    description: Spawns a glass block under your feet with disappears after a given time.
+    aliases: [sb]
+    permission: mctown.spawnblock
+    permission-message: You do not have the permission <permission> to do that!
+    usage: "Usage: /spawnblock"
