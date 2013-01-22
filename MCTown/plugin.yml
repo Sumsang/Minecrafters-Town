@@ -1,0 +1,13 @@
+name: MCTown
+main: net.mctown.MCTown.MCTown
+version: 0.1.0
+description: The Minecrafters Town SMP server plugin.
+author: Sumsang
+website: http://mctown.net/
+
+commands:
+  test:
+    description: Test command
+    permission: mctown.test
+    permission-message: You do not have the permission <permission> to do that!
+    usage: "Usage: /god [player]"
