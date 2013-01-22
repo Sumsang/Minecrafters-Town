@@ -10,4 +10,4 @@ commands:
     description: Test command
     permission: mctown.test
     permission-message: You do not have the permission <permission> to do that!
-    usage: "Usage: /god [player]"
+    usage: "Usage: /test"
