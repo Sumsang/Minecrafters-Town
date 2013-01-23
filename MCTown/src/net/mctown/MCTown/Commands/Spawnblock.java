@@ -25,7 +25,8 @@ public class Spawnblock implements CommandExecutor {
 			player = (Player) sender;
 			this.getBlock();
 			this.setBlock(Material.GLASS);
-			this.setTimer(60);
+			this.setTimer(block, 60);
+			player.sendMessage("A glass block was created under your feet!");
 			return true;
 		} else {
 			sender.sendMessage("You must be a player!");
@@ -48,12 +49,13 @@ public class Spawnblock implements CommandExecutor {
 		}
 	}
 
-	private void setTimer(int delay) {
+	private void setTimer(Block pBlock, int delay) {
+		final Block lBlock = pBlock;
 		ref.getServer().getScheduler()
 				.scheduleSyncDelayedTask(ref, new Runnable() {
 					@Override
 					public void run() {
-						block.setTypeId(0);
+						lBlock.setTypeId(0);
 					}
 				}, delay * 20L);
 	}

@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class Distance implements CommandExecutor {
-	
+
 	private final MCTown ref;
 	private Player player;
 	private Location playerLoc, targetLoc;
@@ -24,7 +24,7 @@ public class Distance implements CommandExecutor {
 			String[] args) {
 		if (sender instanceof Player) {
 			player = (Player) sender;
-			playerLoc = player.getLocation();
+			playerLoc = player.getEyeLocation();
 			targetLoc = player.getTargetBlock(null, 1000).getLocation();
 			this.measure();
 			this.setSuffix();
@@ -35,14 +35,14 @@ public class Distance implements CommandExecutor {
 		}
 		return false;
 	}
-	
+
 	// Get the location of the targeted block
-	private void measure(){
-		distance = (int) playerLoc.distance(targetLoc) + 1;
+	private void measure() {
+		distance = ((int) playerLoc.distance(targetLoc)) + 1;
 	}
-	
+
 	// Singular or plural of "blocks"
-	private void setSuffix(){
+	private void setSuffix() {
 		if (distance == 1) {
 			suffix = "block";
 		} else {

@@ -35,7 +35,7 @@ public class Anvil implements CommandExecutor {
 								lBlock.setTypeId(0);
 							}
 						}, 3 * 20L);
-			} 
+			}
 			return true;
 		}
 		return false;
