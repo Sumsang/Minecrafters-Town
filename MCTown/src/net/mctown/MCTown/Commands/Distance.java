@@ -17,7 +17,7 @@ public class Distance implements CommandExecutor {
 	private String suffix;
 
 	public Distance(MCTown plugin) {
-		this.ref = plugin;
+		ref = plugin;
 	}
 
 	public boolean onCommand(CommandSender sender, Command cmd, String label,
@@ -38,7 +38,7 @@ public class Distance implements CommandExecutor {
 
 	// Get the location of the targeted block
 	private void measure() {
-		distance = ((int) playerLoc.distance(targetLoc)) + 1;
+		distance = ((int) playerLoc.distance(targetLoc));
 	}
 
 	// Singular or plural of "blocks"

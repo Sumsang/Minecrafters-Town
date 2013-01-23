@@ -22,3 +22,8 @@ commands:
     permission: mctown.spawnblock
     permission-message: You do not have the permission <permission> to do that!
     usage: "Usage: /spawnblock"
+  lock:
+    description: Locks the time.
+    permission: mctown.lock
+    permission-message: You do not have the permission <permission> to do that!
+    usage: "Usage: /lock <day/night>"

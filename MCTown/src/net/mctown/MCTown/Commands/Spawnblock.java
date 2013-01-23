@@ -16,7 +16,7 @@ public class Spawnblock implements CommandExecutor {
 	Block block; // Represents block location
 
 	public Spawnblock(MCTown plugin) {
-		this.ref = plugin;
+		ref = plugin;
 	}
 
 	public boolean onCommand(CommandSender sender, Command cmd, String label,

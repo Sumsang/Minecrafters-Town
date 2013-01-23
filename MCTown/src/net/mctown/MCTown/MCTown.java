@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import net.mctown.MCTown.Commands.Anvil;
 import net.mctown.MCTown.Commands.Distance;
+import net.mctown.MCTown.Commands.LockTime;
 import net.mctown.MCTown.Commands.Spawnblock;
 
 import org.bukkit.plugin.PluginDescriptionFile;
@@ -25,6 +26,7 @@ public class MCTown extends JavaPlugin {
 		getCommand("anvil").setExecutor(new Anvil(this));
 		getCommand("distance").setExecutor(new Distance(this));
 		getCommand("spawnblock").setExecutor(new Spawnblock(this));
+		getCommand("lock").setExecutor(new LockTime(this));
 	}
 
 	public void onDisable() {
