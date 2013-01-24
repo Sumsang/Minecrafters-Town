@@ -34,7 +34,7 @@ public class LockTime implements CommandExecutor {
 			sender.sendMessage(ChatColor.RED + "Too many arguements");
 		} else if (args[0].equalsIgnoreCase("day")) {
 			if (locked) {
-				sender.sendMessage("Please unlock the time first!");
+				sender.sendMessage("Please unlock the time first! Type: /lock");
 			} else {
 				this.lockDay();
 				sender.sendMessage("Day-time was locked!");
@@ -42,7 +42,7 @@ public class LockTime implements CommandExecutor {
 			return true;
 		} else if (args[0].equalsIgnoreCase("night")) {
 			if (locked) {
-				sender.sendMessage("Please unlock the time first!");
+				sender.sendMessage("Please unlock the time first! Type: /lock");
 			} else {
 				this.lockNight();
 				sender.sendMessage("Night-time was locked!");
