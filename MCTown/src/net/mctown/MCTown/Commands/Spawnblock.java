@@ -2,6 +2,7 @@ package net.mctown.MCTown.Commands;
 
 import net.mctown.MCTown.MCTown;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -24,9 +25,13 @@ public class Spawnblock implements CommandExecutor {
 		if (sender instanceof Player) {
 			player = (Player) sender;
 			this.getBlock();
-			this.setBlock(Material.GLASS);
+			if (this.setBlock(Material.GLASS)) {
+				player.sendMessage("A glass block was created under your feet!");
+			} else {
+				player.sendMessage(ChatColor.RED
+						+ "The block under your feet is not empty!");
+			}
 			this.setTimer(block, 60);
-			player.sendMessage("A glass block was created under your feet!");
 			return true;
 		} else {
 			sender.sendMessage("You must be a player!");
@@ -43,10 +48,12 @@ public class Spawnblock implements CommandExecutor {
 	}
 
 	// If block is air, a glass block will be set
-	private void setBlock(Material material) {
+	private boolean setBlock(Material material) {
 		if (block.isEmpty()) {
 			block.setType(material);
-		}
+			return true;
+		} else
+			return false;
 	}
 
 	private void setTimer(Block pBlock, int delay) {
