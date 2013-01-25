@@ -37,7 +37,7 @@ public class LockTime implements CommandExecutor {
 				sender.sendMessage("Please unlock the time first! Type: /lock");
 			} else {
 				this.lockDay();
-				sender.sendMessage("Day-time was locked!");
+				ref.getServer().broadcastMessage("Day-time was locked!");
 			}
 			return true;
 		} else if (args[0].equalsIgnoreCase("night")) {
@@ -45,7 +45,7 @@ public class LockTime implements CommandExecutor {
 				sender.sendMessage("Please unlock the time first! Type: /lock");
 			} else {
 				this.lockNight();
-				sender.sendMessage("Night-time was locked!");
+				ref.getServer().broadcastMessage("Night-time was locked!");
 			}
 			return true;
 		} else {
