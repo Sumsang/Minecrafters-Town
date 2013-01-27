@@ -25,7 +25,7 @@ public class LockTime implements CommandExecutor {
 		if (args.length == 0) {
 			if (locked) {
 				this.unlock();
-				sender.sendMessage("The time was unlocked!");
+				ref.getServer().broadcastMessage("The time was unlocked!");
 			} else {
 				sender.sendMessage("The time is already unlocked!");
 			}

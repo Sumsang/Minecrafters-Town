@@ -18,9 +18,7 @@ public class MCTown extends JavaPlugin {
 	public void onEnable() {
 		desc = this.getDescription();
 		logger = this.getLogger();
-		this.getLogger().info(
-				desc.getFullName() + " version " + desc.getVersion()
-						+ " has been loaded!");
+		this.getLogger().info(desc.getFullName() + " has been loaded!");
 
 		// Handle commands
 		getCommand("anvil").setExecutor(new Anvil(this));
