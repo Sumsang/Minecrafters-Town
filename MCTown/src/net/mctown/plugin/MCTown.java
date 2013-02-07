@@ -1,11 +1,11 @@
-package net.mctown.MCTown;
+package net.mctown.plugin;
 
 import java.util.logging.Logger;
 
-import net.mctown.MCTown.Commands.Anvil;
-import net.mctown.MCTown.Commands.Distance;
-import net.mctown.MCTown.Commands.LockTime;
-import net.mctown.MCTown.Commands.Spawnblock;
+import net.mctown.plugin.Commands.Anvil;
+import net.mctown.plugin.Commands.Distance;
+import net.mctown.plugin.Commands.LockTime;
+import net.mctown.plugin.Commands.Spawnblock;
 
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;

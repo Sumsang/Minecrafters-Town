@@ -1,6 +1,6 @@
-package net.mctown.MCTown.Commands;
+package net.mctown.plugin.Commands;
 
-import net.mctown.MCTown.MCTown;
+import net.mctown.plugin.MCTown;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;

@@ -1,5 +1,5 @@
 name: MCTown
-main: net.mctown.MCTown.MCTown
+main: net.mctown.plugin.MCTown
 version: 0.3
 description: The Minecrafters Town SMP server plugin.
 author: Sumsang
