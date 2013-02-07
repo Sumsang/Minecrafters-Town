@@ -1,4 +1,4 @@
-package net.mctown.plugin.Commands;
+package net.mctown.plugin.commands;
 
 import net.mctown.plugin.MCTown;
 
