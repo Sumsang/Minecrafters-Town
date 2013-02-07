@@ -1,3 +1,8 @@
+/**
+ * This class handles the /anvil command.
+ *
+ * @author Sumsang
+ */
 package net.mctown.plugin.commands;
 
 import net.mctown.plugin.MCTown;

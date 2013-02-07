@@ -1,3 +1,8 @@
+/**
+ * Plugin main class
+ *
+ * @author Sumsang
+ */
 package net.mctown.plugin;
 
 import java.util.logging.Logger;

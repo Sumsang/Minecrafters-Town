@@ -1,3 +1,8 @@
+/**
+ * This class handles the /spawnblock command.
+ *
+ * @author Sumsang
+ */
 package net.mctown.plugin.commands;
 
 import net.mctown.plugin.MCTown;
